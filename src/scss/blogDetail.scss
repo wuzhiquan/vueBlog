@@ -1,0 +1,82 @@
+@import "header.scss";
+.blogCon{
+  overflow:hidden;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  .articleDetail{
+    padding: 20px 0;
+    margin-bottom: 20px;
+    .title{
+      font-size: 20px;
+      color: $btnColor;
+      margin: 10px 0;
+      font-weight: normal;
+    }
+    .time{
+      color:$grayFont;
+      margin: 20px 0;
+      font-size:14px;
+      label{
+        margin-right: 20px;
+      }
+    }
+    .articleContent{
+      width: 100%;
+    }
+  }
+  .jump{
+    margin-bottom:10px;
+    span{
+      cursor: pointer;
+      color: $grayFont;
+      transition: .3s;
+      &:hover{
+        color:$grayFontHover;
+      }
+    }
+  }
+  .commentList{
+    padding:10px 20px;
+    margin-top:50px;
+    background: $lightGray;
+    li{
+      border-bottom: 1px dotted $borderColor;
+      padding:10px 0 0;
+      font-size: 14px;
+      &:last-child{
+        border-bottom:none;
+      }
+      p{
+        margin-bottom: 6px;
+      }
+      .prefix{
+        overflow: hidden;
+        color: #999;
+        font-size: 12px;
+        .right{
+          float: right;
+        }
+      }
+    }
+  }
+}
+.commentArea{
+  margin-top: 30px;
+  input{
+    width: calc(100% - 125px);
+  }
+  p{
+    overflow: hidden;
+    margin-bottom: 10px;
+    label{
+      float: left;
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  textarea{
+    width:100%;
+    margin-bottom: 10px;
+  }
+}
