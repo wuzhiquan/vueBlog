@@ -1,0 +1,18 @@
+@import "header.scss";
+.editorbox{
+  padding: 20px;
+  .NormalInp{
+    width:100%;
+  }
+  .NormalBtn{
+    margin-top: 20px;
+  }
+}
+.tabSelect{
+  margin: 10px 0;
+  select{
+    height: 32px;
+    line-height: 32px;border: 1px solid $borderColor;
+    width: 250px;
+  }
+}

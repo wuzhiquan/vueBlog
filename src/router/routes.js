@@ -40,15 +40,31 @@ export default [
         meta: {
           title: '查看文章'
         }
+      },
+      {
+        path: 'Editor',
+        name: 'Editor',
+        component: resolve => require.ensure([], () => resolve(require('@/Editor/Index.vue')), 'Editor'),
+        meta: {
+          title: '发布文章'
+        }
+      },
+      {
+        path: '/aboutMe',
+        name: 'AboutMe',
+        component: resolve => require.ensure([], () => resolve(require('@/components/AboutMe.vue')), 'AboutMe'),
+        meta: {
+          title: '关于我'
+        }
+      },
+      {
+        path: '/Picture',
+        name: 'Picture',
+        component: resolve => require.ensure([], () => resolve(require('@/components/Picture.vue')), 'Picture'),
+        meta: {
+          title: '我的相册'
+        }
       }
     ]
-  },
-  {
-    path: '/Editor',
-    name: 'Editor',
-    component: resolve => require.ensure([], () => resolve(require('@/Editor/Index.vue')), 'Editor'),
-    meta: {
-      title: '发布文章'
-    }
   }
 ]

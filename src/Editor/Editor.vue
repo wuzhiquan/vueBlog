@@ -43,13 +43,13 @@ export default {
   .NormalBtn{
     position:absolute;
     right:6px;
-    top:3px;
+    top:-17px;
     line-height: 26px;
     height:26px;
     z-index: 10000;
   }
   .fullScreenTop{
-    top: -28px;
+    top: -239px;
   }
 }
 .fullscreen-editor {

@@ -1,16 +1,20 @@
 <template>
-  <div>
+  <div class="editorbox">
     <input class="NormalInp" v-model="title" placeholder="请输入标题"/>
-    <select v-model="tabId">
-      <option v-for="tab in tabList" :value="tab.id" :key="tab.id">{{tab.tab_name}}</option>
-    </select>
+    <p class="tabSelect">
+      <label>请选择文章标签：</label>
+      <select v-model="tabId">
+        <option v-for="tab in tabList" :value="tab.id" :key="tab.id">{{tab.tab_name}}</option>
+      </select>
+    </p>
     <editor ref="editor"></editor>
-    <button @click="getContent">提交文章</button>
+    <button @click="getContent" class="NormalBtn">提交文章</button>
   </div>
 </template>
 
 <script>
 import Editor from './Editor'
+import '@/scss/editor.scss'
 import axios from 'axios'
 import Qs from 'qs'
 import { Message } from 'element-ui'
